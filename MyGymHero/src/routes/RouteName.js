@@ -1,5 +1,6 @@
 const RouteName = {
-  YOUR_PROGRAM: 'YourProgram',
+  HOME_SCREEN: 'HomeScreen',
+  TRAINING_TAB: 'TrainingTab',
 };
 
 export default RouteName;
