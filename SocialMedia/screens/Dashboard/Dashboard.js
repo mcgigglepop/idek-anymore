@@ -26,6 +26,41 @@ const trainingFocusData = [
     name: 'workout_1',
     workoutImg: images.focusImg1,
   },
+  {
+    id: 2,
+    name: 'workout_2',
+    workoutImg: images.focusImg2,
+  },
+  {
+    id: 3,
+    name: 'workout_3',
+    workoutImg: images.focusImg3,
+  },
+  {
+    id: 4,
+    name: 'workout_4',
+    workoutImg: images.focusImg4,
+  },
+  {
+    id: 5,
+    name: 'workout_1',
+    workoutImg: images.focusImg1,
+  },
+  {
+    id: 6,
+    name: 'workout_2',
+    workoutImg: images.focusImg2,
+  },
+  {
+    id: 7,
+    name: 'workout_3',
+    workoutImg: images.focusImg3,
+  },
+  {
+    id: 8,
+    name: 'workout_4',
+    workoutImg: images.focusImg4,
+  },
 ];
 const Home = ({navigation}) => {
   const openDrawer = () => {
