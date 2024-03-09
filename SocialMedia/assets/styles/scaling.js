@@ -1,9 +1,5 @@
 import {Dimensions} from 'react-native';
 import DeviceInfo from 'react-native-device-info';
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp,
-} from 'react-native-responsive-screen';
 
 const {width, height} = Dimensions.get('window');
 
@@ -36,18 +32,6 @@ const guidelineBaseFonts = () => {
   return 400;
 };
 
-const SW = dimension => {
-  return wp((dimension / 375) * 100 + '%');
-};
-
-const SH = dimension => {
-  return hp((dimension / 812) * 100 + '%');
-};
-
-const SF = dimension => {
-  return hp((dimension / 812) * 100 + '%');
-};
-
 const scaleFontSize = size => Math.round((width / guidelineBaseFonts()) * size);
 
-export {horizontalScale, verticalScale, scaleFontSize, SW, SH, SF};
+export {horizontalScale, verticalScale, scaleFontSize};

@@ -2,7 +2,6 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {Routes} from './Routes';
 import Home from '../screens/Home/Home';
 import Profile from '../screens/Profile/Profile';
-import Dashboard from '../screens/Dashboard/Dashboard';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import ProfileTabContent from '../components/ProfileTabContent/ProfileTabContent';
@@ -11,6 +10,8 @@ import ProfileTabTitle from '../components/ProfileTabTitle/ProfileTabTitle';
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 const ProfileTabs = createMaterialTopTabNavigator();
+
+
 
 export const ProfileTabsNavigation = () => {
   return (
@@ -59,7 +60,6 @@ const MainMenuNavigation = () => {
     <Drawer.Navigator screenOptions={{header: () => null, headerShown: false}}>
       <Drawer.Screen name={Routes.Home} component={Home} />
       <Drawer.Screen name={Routes.Profile} component={Profile} />
-      <Drawer.Screen name={Routes.Dashboard} component={Dashboard} />
     </Drawer.Navigator>
   );
 };

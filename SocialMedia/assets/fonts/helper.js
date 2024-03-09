@@ -21,6 +21,6 @@ export const getFontFamily = (basefont = 'Inter', weight) => {
     case '900':
       return `${basefont}-Black`;
     default:
-      return `${baseFont}-Regular`;
+      return `${baseFont}-Regular`
   }
 };
