@@ -11,8 +11,6 @@ const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 const ProfileTabs = createMaterialTopTabNavigator();
 
-
-
 export const ProfileTabsNavigation = () => {
   return (
     <ProfileTabs.Navigator
@@ -60,6 +58,7 @@ const MainMenuNavigation = () => {
     <Drawer.Navigator screenOptions={{header: () => null, headerShown: false}}>
       <Drawer.Screen name={Routes.Home} component={Home} />
       <Drawer.Screen name={Routes.Profile} component={Profile} />
+      <Drawer.Screen name={Routes.GenerateWorkout} component={Home} />
     </Drawer.Navigator>
   );
 };
